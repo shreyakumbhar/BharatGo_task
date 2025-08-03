@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Home = () => {
   const [product, setproduct] = useState([]);
@@ -38,10 +39,14 @@ const Home = () => {
     user.title.toLowerCase().includes(searchTerm.toLowerCase())
     
   );
-  const filteredCategories = category.filter(category => category.id <= 14);
+  const filteredCategories = category.filter(category => category.id <= 5);
+
+  console.log("filteredCategories",filteredCategories);
 
   return (
     <div className="container my-4">
+
+        <Navbar />
 
          <div className="mb-3">
             <input
@@ -61,27 +66,7 @@ const Home = () => {
                 data-bs-ride="carousel"
                 data-bs-interval="2000"
               >
-                {/* <div class="carousel-inner">
-                  <div
-                    class="carousel-item active"
-                    style={{ position: "relative" }}
-                  >
-                    <img
-                      src="Images/home1.jpg"
-                      class="d-block w-100"
-                      alt="First Image"
-                    />
-                   
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="Images/home3.jpg"
-                      class="d-block w-100"
-                      alt="Second Image"
-                    />
-                   
-                  </div>
-                </div> */}
+               
               </div>
             </div>
           </section>

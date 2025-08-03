@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import Rating from './Ratings';
 import { ProductContext } from './ProductContext';
+import Navbar from './Navbar';
 
 const ProductDetails = () => {
   const { addToCart } = useContext(ProductContext);
@@ -26,6 +27,7 @@ console.log(productdetails);
 
   return (
     <div className='container my-4'>
+          <Navbar/>
         <div className='row'>
              <div className='col-6'>
             

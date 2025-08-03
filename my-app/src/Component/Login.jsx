@@ -28,6 +28,7 @@ const Login = () => {
       <input type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email"  className="block w-full mb-4 p-2 border"/>
       <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder="Password"  className="block w-full mb-4 p-2 border" />
       <button onClick={handleLogin} className="btn btn-danger text-white px-6 py-2 mt-2">Login</button>
+      <p>Not a Member<a href="/signup"> SignUp Now </a></p>
     </div>
     </div>
     </div>

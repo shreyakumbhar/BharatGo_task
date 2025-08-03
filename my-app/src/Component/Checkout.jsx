@@ -10,6 +10,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { NavLink } from "react-router-dom";
+import Navbar from "./Navbar";
 
 
 
@@ -80,7 +81,7 @@ const Checkout = () => {
     <>
 
       <div className="container checkout my-4">
-    
+        <Navbar/>
         <div className="row">
           <div className="col-7">
             <Accordion defaultExpanded>

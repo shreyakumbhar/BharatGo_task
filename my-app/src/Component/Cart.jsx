@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ProductContext } from "./ProductContext";
 import { useContext } from "react";
+import Navbar from "./Navbar";
 
 const Cart = (props) => {
   const [productsData, setProductsData] = useState([]);
@@ -80,6 +81,7 @@ const decrement = (id) => {
   return (
     <>
       <div className="container">
+        <Navbar/>
         <div className="d-flex  justify-content-between p-4">
           <h5>Shop Cart</h5>
           <i class="bi bi-x-lg"></i>
