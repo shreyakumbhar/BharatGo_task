@@ -12,7 +12,7 @@ const SignUp = () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       console.log("Signed up:", userCredential.user);
-            alert("Login successful!");
+      
         navigate("/login");
     } catch (err) {
       console.error(err.message);

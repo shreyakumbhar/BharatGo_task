@@ -12,9 +12,11 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
+            alert("Login successful!");
       navigate("/"); // redirect after login
     } catch (error) {
-      alert(error.message);
+      alert("Login Failed",error.message);
+
     }
   };
 
